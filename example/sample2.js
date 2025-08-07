@@ -46,7 +46,7 @@ function userIdEvent(e) {
     renderJsonToList(user);
 }
 
-function loadJson(jsonPath = './a.json') {
+function loadJson(jsonPath = './sample2.json') {
     return fetch(jsonPath, { cache: "no-store" })
         .then(response => {
             if (!response.ok) throw new Error("Fetch failed");

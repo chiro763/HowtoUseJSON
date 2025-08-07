@@ -24,7 +24,7 @@ function renderJsonToList(json) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  fetch('./sample.json', { cache: "no-store" })
+  fetch('./sample1.json', { cache: "no-store" })
     .then(response => {
       if (!response.ok) throw new Error("Fetch failed");
       return response.json();
